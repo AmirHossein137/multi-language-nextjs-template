@@ -3,7 +3,7 @@ import { usePathname, useRouter } from "@/navigation";
 import { useParams } from "next/navigation";
 import React, { useTransition } from "react";
 
-const LocaleSwitcherSelect = ({defaultValue , label , children}) => {
+const LocaleSwitcherSelect = ({ defaultValue, label, children }) => {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
