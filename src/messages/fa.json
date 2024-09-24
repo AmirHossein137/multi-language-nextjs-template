@@ -1,0 +1,12 @@
+{
+  "IndexPage": {
+    "title": "سلام دنیا"
+  },
+  "LocalSwitcher": {
+    "label": "عوض کردن زبان",
+    "locale": "{ locale , select , fa { فارسی } en { انگلیسی } other {Unknown}}"
+  },
+  "Dashboard" : {
+    "title" : "داشبورد"
+  }
+}

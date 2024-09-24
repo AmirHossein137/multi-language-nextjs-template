@@ -1,0 +1,12 @@
+{
+  "IndexPage": {
+    "title": "Hello World"
+  },
+  "LocalSwitcher": {
+    "label": "Change Language",
+    "locale": "{ locale , select , fa { Farsi } en {English} other {Unknown}}"
+  },
+  "Dashboard" : {
+    "title" : "Dashboard"
+  }
+}

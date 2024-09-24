@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-restricted-imports" : [
+      "error",
+      {
+        "name" : "next/link",
+        "message" : "Please import form `@/navigation` instead.",
+        "importNames" : ["default"]
+      },
+      {
+        "name" : "next/link",
+        "message" : "Please import form `@/navigation` instead.",
+        "importNames" : ["redirect" , "permanentRedirect" , "useRouter", "usePathname"]
+      }
+    ]
+  }
 }
