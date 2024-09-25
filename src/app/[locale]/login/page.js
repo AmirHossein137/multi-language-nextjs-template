@@ -1,10 +1,10 @@
 "use client";
 
-import { redirect, useRouter } from "@/navigation";
+import { useRouter } from "@/navigation";
 import { setCredentials } from "@/redux/features/authSlice/authSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { Button, Input } from "@nextui-org/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Login = () => {
   const [username, setUserName] = useState("");
@@ -24,9 +24,11 @@ const Login = () => {
     }
   };
 
-  if (token) {
-    redirect("/");
-  }
+  useEffect(() => {
+    if (token) {
+      router.push("/dashboard");
+    }
+  }, [token]);
 
   return (
     <form
