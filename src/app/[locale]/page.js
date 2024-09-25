@@ -10,6 +10,7 @@ export default function Home() {
       <div className="flex items-center justify-center gap-3 my-6">
         <Link href={"/dashboard"}>Dashboard</Link>
         <Link href={"/blog"}>Blog</Link>
+        <Link href={"/login"}>Login</Link>
       </div>
       <div className="mt-5">
         <span>{t("title")}</span>

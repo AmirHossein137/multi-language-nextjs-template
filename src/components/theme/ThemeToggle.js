@@ -9,7 +9,6 @@ const ThemeToggle = () => {
   const { theme, setTheme, systemTheme } = useTheme();
   const [mount, setMount] = useState(false);
 
-  console.log(toggle);
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
